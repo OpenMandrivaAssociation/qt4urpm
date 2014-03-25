@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Name:           qt4urpm
 Version:        1.0.1
 Release:        1
@@ -24,7 +26,7 @@ search for packages that contain a specific file.
 
 %build
 make lrelease
-qmake -spec %{_libdir}/qt4/mkspecs/linux-g++ -o Makefile qt4urpm.pro
+qmake -spec /usr/lib/qt4/mkspecs/linux-g++ -o Makefile qt4urpm.pro
 make LOCALEPATH="%{_datadir}/%{name}/qm/"
 
 %install
