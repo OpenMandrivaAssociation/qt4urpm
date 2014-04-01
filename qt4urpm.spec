@@ -2,12 +2,13 @@
 
 Name:           qt4urpm
 Version:        1.0.1
-Release:        1
+Release:        2
 Summary:        A Qt based frontend for the urpm* package management tools
 License:        GPLv3
 Group:          System/Configuration/Packaging
 URL:            http://www.sf.net/projects/qt4urpm
 Source0:        %{name}-%{version}.tar.gz
+Patch1:		qt4urpm-1.0.1-urpmi.recover.patch
 
 BuildRequires:  qt4-devel
 Requires:       urpmi
@@ -23,6 +24,7 @@ search for packages that contain a specific file.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 make lrelease
