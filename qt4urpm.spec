@@ -2,7 +2,7 @@
 
 Name:           qt4urpm
 Version:        2.0
-Release:        1
+Release:        2
 Summary:        A Qt based frontend for the urpm* package management tools
 License:        GPLv3
 Group:          System/Configuration/Packaging
