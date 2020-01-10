@@ -23,7 +23,7 @@ search for packages that contain a specific file.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 make lrelease
