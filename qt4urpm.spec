@@ -6,7 +6,7 @@ Release:        2
 Summary:        A Qt based frontend for the urpm* package management tools
 License:        GPLv3
 Group:          System/Configuration/Packaging
-URL:            http://www.sf.net/projects/qt4urpm
+URL:            https://www.sf.net/projects/qt4urpm
 Source0:        %{name}-%{version}.tar.xz
 
 BuildRequires:  qt4-devel
