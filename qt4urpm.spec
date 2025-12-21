@@ -9,6 +9,7 @@ Group:          System/Configuration/Packaging
 URL:            https://www.sf.net/projects/qt4urpm
 Source0:        %{name}-%{version}.tar.xz
 
+BuildRequires:	make
 BuildRequires:  qt4-devel
 Requires:       urpmi
 Requires:       kdebase4-runtime
